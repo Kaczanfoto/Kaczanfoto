@@ -125,9 +125,9 @@
     <img src="supra 1.jpg" alt="Auto 1">
     <img src="supra 2.jpg" alt="Auto 2">
     <img src="supra 3.jpg" alt="Auto 3">
-    <img src="supra 7.jpg" alt="Auto 4">
+    <img src="supra%206.JPG" alt="Auto 4">
     <img src="supra 5.jpg" alt="Auto 5">
-    <img src="supra 4.jpg" alt="Auto 6">
+    <img src="supra%204.jpg" alt="Auto 6">
      </div>
   <hr class="divider">
   <div class="gallery">
@@ -137,8 +137,23 @@
     <img src="gren 4.jpg" alt="Auto 10">
     <img src="gren 5.jpg" alt="Auto 11">
     <img src="gren%202.jpg" alt="Auto 12">
+  </div>
+  <hr class="divider">
+  <div class="gallery">
+    <img src="kamil 1.jpg" alt="Auto 13">
+    <img src="kamil 2.jpg" alt="Auto 14">
+    <img src="kamil 3.jpg" alt="Auto 15">
+    <img src="gabi 1.jpg" alt="Auto 16">
+    <img src="gabi 2.jpg" alt="Auto 17">
+    <img src="gabi 3 .jpg" alt="Auto 18">
+    <img src="gabi 4.jpg" alt="Auto 19">
+    <img src="gabi 5.jpg" alt="Auto 20">
+    <img src="gabi 6 .jpg" alt="Auto 21">
     
   </div>
+  
+  
+  
   
 </section>
 
@@ -154,8 +169,8 @@
   </div>
   <hr class="divider">
   <div class="gallery">
-    <img src="maciek 1.jpg" alt="Portret 8">
-    <img src="maciek 2.jpg" alt="Portret 9">
+    <img src="maciek%201.jpg" alt="Portret 8">
+    <img src="maciek%202.jpg" alt="Portret 9">
    <img src="maciek 3.jpg" alt="Portret 10">
     
   </div>
@@ -180,8 +195,8 @@
   <div class="gallery">
     <img src="grzesiu 1.jpg" alt="Motor 1">
     <img src="kask malgosia.jpg" alt="Motor 2">
-    <img src="malgosia 2.jpg" alt="Motor 3">
-    <img src="malgosia 3.jpg" alt="Motor 4">
+    <img src="malgosia%202.jpg" alt="Motor 3">
+    <img src="malgosia%203.jpg" alt="Motor 4">
     <img src="malowanie.jpg" alt="Motor 5">
     <img src="stunt duke.jpg" alt="Motor 6">
   </div>
@@ -216,4 +231,3 @@
 </script>
 
 </body>
-</html>
