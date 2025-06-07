@@ -147,7 +147,7 @@
   <div class="gallery">
     <img src="natalia 1.jpg" alt="Portret 1">
     <img src="natalia 2.jpg" alt="Portret 2">
-    <img src="natalia%206.jpg" alt="Portret 3">
+    <img src="natalia 6.jpg" alt="Portret 3">
     <img src="natalia 4.jpg" alt="Portret 4">
     <img src="natalia 5.jpg" alt="Portret 5">
     <img src="natalia%208.jpg" alt="Portret 6">
