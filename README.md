@@ -124,7 +124,7 @@
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
 
-  <h3>Sesja Supra</h3>
+  <h3>Sesja Supra </h3>
   <div class="gallery">
     <img src="supra 1.jpg" alt="Supra 1">
     <img src="supra 2.jpg" alt="Supra 2">
@@ -134,7 +134,7 @@
     <img src="supra 4.jpg" alt="Supra 6">
   </div>
 
-  <h3>Sesja Gren</h3>
+  <h3>Sesja g3m_green_g0blin</h3>
   <div class="gallery">
     <img src="gren 1.jpg" alt="Gren 1">
     <img src="gren 6.jpg" alt="Gren 2">
@@ -163,9 +163,9 @@
 </section>
 
 <section id="ludzie" class="category-section">
-  <h2>Portrety Ludzi</h2>
+  <h2>Portrety Ludzi </h2>
 
-  <h3>Sesja Natalia</h3>
+  <h3>Sesja Natalii </h3>
   <div class="gallery">
     <img src="natalia 1.jpg" alt="Portret Natalia 1">
     <img src="natalia 2.jpg" alt="Portret Natalia 2">
@@ -175,7 +175,7 @@
     <img src="natalia 8.jpg" alt="Portret Natalia 6">
   </div>
 
-  <h3>Sesja Ruda</h3>
+  <h3>Sesja Rudej </h3>
   <div class="gallery">
     <img src="ruda.jpg" alt="Ruda 1">
     <img src="ruda 2.jpg" alt="Ruda 2">
@@ -188,21 +188,10 @@
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
-
-  <h3>Sesja Grzesiu</h3>
-  <div class="gallery">
     <img src="grzesiu 1.jpg" alt="Grzesiu 1">
-  </div>
-
-  <h3>Sesja Małgosia</h3>
-  <div class="gallery">
     <img src="kask malgosia.jpg" alt="Małgosia 1">
     <img src="malgosia 2.jpg" alt="Małgosia 2">
     <img src="malgosia 3.jpg" alt="Małgosia 3">
-  </div>
-
-  <h3>Sesja Stunt Duke</h3>
-  <div class="gallery">
     <img src="malowanie.jpg" alt="Malowanie">
     <img src="stunt duke.jpg" alt="Stunt">
   </div>
