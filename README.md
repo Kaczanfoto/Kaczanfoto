@@ -7,19 +7,19 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #ddd;
     }
 
     header {
-      background-color: #1e1e1e;
+      background-color: #111;
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
 
     nav {
-      background-color: #2c2c2c;
+      background-color: #1e1e1e;
       display: flex;
       justify-content: center;
       padding: 10px;
@@ -45,6 +45,8 @@
     .category-section {
       display: none;
       padding: 30px 20px;
+      background-color: #2a2a2a;
+      color: #f0f0f0;
     }
 
     .category-section.active {
@@ -57,26 +59,26 @@
       padding-left: 10px;
     }
 
+    .category-section h3 {
+      margin-top: 40px;
+      color: #f39c12;
+    }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
+      margin-bottom: 30px;
     }
 
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .divider {
-      margin: 40px 0;
-      border: none;
-      border-top: 2px dashed #aaa;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
 
     #o-mnie, #kontakt {
-      background-color: #ffffff;
+      background-color: #2a2a2a;
       padding: 40px 20px;
       margin-top: 20px;
       border-top: 4px solid #f39c12;
@@ -84,7 +86,7 @@
 
     #o-mnie h2, #kontakt h2 {
       margin-top: 0;
-      color: #1e1e1e;
+      color: #f39c12;
     }
 
     #kontakt a {
@@ -99,7 +101,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #1e1e1e;
+      background-color: #111;
       color: white;
     }
   </style>
@@ -121,76 +123,88 @@
 
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
+
+  <h3>Sesja Supra</h3>
   <div class="gallery">
-    <img src="supra 1.jpg" alt="Auto 1">
-    <img src="supra 2.jpg" alt="Auto 2">
-    <img src="supra 3.jpg" alt="Auto 3">
-    <img src="supra 6.jpg" alt="Auto 4">
-    <img src="supra 5.jpg" alt="Auto 5">
-    <img src="supra 4.jpg" alt="Auto 6">
-     </div>
-  <hr class="divider">
-  <div class="gallery">
-    <img src="gren 1.jpg" alt="Auto 7">
-    <img src="gren%206.jpg" alt="Auto 8">
-    <img src="gren 3.jpg" alt="Auto 9">
-    <img src="gren 4.jpg" alt="Auto 10">
-    <img src="gren 5.jpg" alt="Auto 11">
-    <img src="gren%202.jpg" alt="Auto 12">
+    <img src="supra 1.jpg" alt="Supra 1">
+    <img src="supra 2.jpg" alt="Supra 2">
+    <img src="supra 3.jpg" alt="Supra 3">
+    <img src="supra 6.jpg" alt="Supra 4">
+    <img src="supra 5.jpg" alt="Supra 5">
+    <img src="supra 4.jpg" alt="Supra 6">
   </div>
-  <hr class="divider">
+
+  <h3>Sesja Gren</h3>
   <div class="gallery">
-    <img src="kamil 1.jpg" alt="Auto 13">
-    <img src="kamil 2.jpg" alt="Auto 14">
-    <img src="kamil 3.jpg" alt="Auto 15">
-    <img src="gabi 1.jpg" alt="Auto 16">
-    <img src="gabi 2.jpg" alt="Auto 17">
-    <img src="gabi 3.jpg" alt="Auto 18">
-    <img src="gabi 4.jpg" alt="Auto 19">
-    <img src="gabi 5.jpg" alt="Auto 20">
-    <img src="gabi 6.jpg" alt="Auto 21">
-    
+    <img src="gren 1.jpg" alt="Gren 1">
+    <img src="gren 6.jpg" alt="Gren 2">
+    <img src="gren 3.jpg" alt="Gren 3">
+    <img src="gren 4.jpg" alt="Gren 4">
+    <img src="gren 5.jpg" alt="Gren 5">
+    <img src="gren 2.jpg" alt="Gren 6">
   </div>
-  
+
+  <h3>Sesja Kamil</h3>
+  <div class="gallery">
+    <img src="kamil 1.jpg" alt="Kamil 1">
+    <img src="kamil 2.jpg" alt="Kamil 2">
+    <img src="kamil 3.jpg" alt="Kamil 3">
+  </div>
+
+  <h3>Sesja Gabi</h3>
+  <div class="gallery">
+    <img src="gabi 1.jpg" alt="Gabi 1">
+    <img src="gabi 2.jpg" alt="Gabi 2">
+    <img src="gabi 3.jpg" alt="Gabi 3">
+    <img src="gabi 4.jpg" alt="Gabi 4">
+    <img src="gabi 5.jpg" alt="Gabi 5">
+    <img src="gabi 6.jpg" alt="Gabi 6">
+  </div>
 </section>
 
 <section id="ludzie" class="category-section">
   <h2>Portrety Ludzi</h2>
+
+  <h3>Sesja Natalia</h3>
   <div class="gallery">
-    <img src="natalia 1.jpg" alt="Portret 1">
-    <img src="natalia 2.jpg" alt="Portret 2">
-    <img src="natalia 6.jpg" alt="Portret 3">
-    <img src="natalia 4.jpg" alt="Portret 4">
-    <img src="natalia 5.jpg" alt="Portret 5">
-    <img src="natalia%208.jpg" alt="Portret 6">
+    <img src="natalia 1.jpg" alt="Portret Natalia 1">
+    <img src="natalia 2.jpg" alt="Portret Natalia 2">
+    <img src="natalia 6.jpg" alt="Portret Natalia 3">
+    <img src="natalia 4.jpg" alt="Portret Natalia 4">
+    <img src="natalia 5.jpg" alt="Portret Natalia 5">
+    <img src="natalia 8.jpg" alt="Portret Natalia 6">
   </div>
-  
-  </div>
-  <hr class="divider">
+
+  <h3>Sesja Ruda</h3>
   <div class="gallery">
-    <img src="ruda.jpg" alt="Portret 11">
-    <img src="ruda%202.jpg" alt="Portret 12">
-   <img src="ruda%203.jpg" alt="Portret 13">
-    <img src="ruda%204.jpg" alt="Portret 14">
-    <img src="ruda%205.jpg" alt="Portret 15">
-    <img src="rada1.jpg" alt="Portret 16">
-    
-    
-    
-    
+    <img src="ruda.jpg" alt="Ruda 1">
+    <img src="ruda 2.jpg" alt="Ruda 2">
+    <img src="ruda 3.jpg" alt="Ruda 3">
+    <img src="ruda 4.jpg" alt="Ruda 4">
+    <img src="ruda 5.jpg" alt="Ruda 5">
+    <img src="rada1.jpg" alt="Ruda 6">
   </div>
-  
 </section>
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
+
+  <h3>Sesja Grzesiu</h3>
   <div class="gallery">
-    <img src="grzesiu 1.jpg" alt="Motor 1">
-    <img src="kask malgosia.jpg" alt="Motor 2">
-    <img src="malgosia%202.jpg" alt="Motor 3">
-    <img src="malgosia%203.jpg" alt="Motor 4">
-    <img src="malowanie.jpg" alt="Motor 5">
-    <img src="stunt duke.jpg" alt="Motor 6">
+    <img src="grzesiu 1.jpg" alt="Grzesiu 1">
+  </div>
+
+  <h3>Sesja Małgosia</h3>
+  <div class="gallery">
+    <img src="kask malgosia.jpg" alt="Małgosia 1">
+    <img src="malgosia 2.jpg" alt="Małgosia 2">
+    <img src="malgosia 3.jpg" alt="Małgosia 3">
+  </div>
+
+  <h3>Sesja Stunt Duke</h3>
+  <div class="gallery">
+    <img src="malowanie.jpg" alt="Malowanie">
+    <img src="stunt duke.jpg" alt="Stunt">
   </div>
 </section>
 
