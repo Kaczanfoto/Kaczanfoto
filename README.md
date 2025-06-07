@@ -155,8 +155,8 @@
   </div>
   <hr class="divider">
   <div class="gallery">
-    <img src="maciek%201.jpg" alt="Portret 8">
-    <img src="maciek%202.jpg" alt="Portret 9">
+    <img src="maciek 1.jpg" alt="Portret 8">
+    <img src="maciek 2.jpg" alt="Portret 9">
    <img src="maciek 3.jpg" alt="Portret 10">
     
   </div>
