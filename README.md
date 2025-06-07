@@ -125,18 +125,18 @@
     <img src="supra 1.jpg" alt="Auto 1">
     <img src="supra 2.jpg" alt="Auto 2">
     <img src="supra 3.jpg" alt="Auto 3">
-    <img src="supra 4.jpg" alt="Auto 4">
+    <img src="supra%206.JPG" alt="Auto 4">
     <img src="supra 5.jpg" alt="Auto 5">
-    <img src="supra 6.jpg" alt="Auto 6">
+    <img src="supra%204.jpg" alt="Auto 6">
      </div>
   <hr class="divider">
   <div class="gallery">
     <img src="gren 1.jpg" alt="Auto 7">
-    <img src="gren 2.jpg" alt="Auto 8">
+    <img src="gren%206.jpg" alt="Auto 8">
     <img src="gren 3.jpg" alt="Auto 9">
     <img src="gren 4.jpg" alt="Auto 10">
     <img src="gren 5.jpg" alt="Auto 11">
-    <img src="gren 6.jpg" alt="Auto 12">
+    <img src="gren%202.jpg" alt="Auto 12">
     
   </div>
   
@@ -147,24 +147,26 @@
   <div class="gallery">
     <img src="natalia 1.jpg" alt="Portret 1">
     <img src="natalia 2.jpg" alt="Portret 2">
-    <img src="natalia 3.jpg" alt="Portret 3">
+    <img src="natalia%208.jpg" alt="Portret 3">
     <img src="natalia 4.jpg" alt="Portret 4">
     <img src="natalia 5.jpg" alt="Portret 5">
-    <img src="natalia 6.jpg" alt="Portret 6">
+    <img src="natalia%208.jpg" alt="Portret 6">
   </div>
   <hr class="divider">
   <div class="gallery">
     <img src="maciek%201.jpg" alt="Portret 8">
     <img src="maciek%202.jpg" alt="Portret 9">
+   <img src="maciek 3.jpg" alt="Portret 10">
+    
   </div>
   <hr class="divider">
   <div class="gallery">
-    <img src="ruda.jpg" alt="Portret 10">
-    <img src="ruda%202.jpg" alt="Portret 11">
-   <img src="ruda%203.jpg" alt="Portret 12">
-    <img src="ruda%204.jpg" alt="Portret 13">
-    <img src="ruda%205.jpg" alt="Portret 14">
-    <img src="rada1.jpg" alt="Portret 15">
+    <img src="ruda.jpg" alt="Portret 11">
+    <img src="ruda%202.jpg" alt="Portret 12">
+   <img src="ruda%203.jpg" alt="Portret 13">
+    <img src="ruda%204.jpg" alt="Portret 14">
+    <img src="ruda%205.jpg" alt="Portret 15">
+    <img src="rada1.jpg" alt="Portret 16">
     
     
     
@@ -187,12 +189,12 @@
 
 <section id="o-mnie" class="category-section">
   <h2>O mnie</h2>
-  <p>Cześć! Nazywam się Piotr K Kaczan. Zajmuję się fotografią pasjonacko, a moje ulubione tematy to motory, auta i portrety.</p>
+  <p>Cześć! Nazywam się Piotr K. Zajmuję się fotografią pasjonacko, a moje ulubione tematy to motory, auta i portrety.</p>
 </section>
 
 <section id="kontakt" class="category-section">
   <h2>Kontakt</h2>
-  <p><strong>Instagram:</strong> <a href="https://instagram.com/Pan_kaczan" target="_blank">@Pan_kaczan</a></p>
+  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pan_kaczan____/" target="_blank">@pan_kaczan____</a></p>
   <p><strong>E-mail:</strong> <a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a></p>
 </section>
 
