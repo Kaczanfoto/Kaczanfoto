@@ -164,12 +164,7 @@
     <img src="natalia 5.jpg" alt="Portret 5">
     <img src="natalia%208.jpg" alt="Portret 6">
   </div>
-  <hr class="divider">
-  <div class="gallery">
-    <img src="maciek%201.jpg" alt="Portret 8">
-    <img src="maciek%202.jpg" alt="Portret 9">
-   <img src="maciek 3.jpg" alt="Portret 10">
-    
+  
   </div>
   <hr class="divider">
   <div class="gallery">
@@ -188,7 +183,7 @@
 </section>
 
 <section id="motory" class="category-section">
-  <h2>Motocykle i Motory</h2>
+  <h2>Motocykle</h2>
   <div class="gallery">
     <img src="grzesiu 1.jpg" alt="Motor 1">
     <img src="kask malgosia.jpg" alt="Motor 2">
