@@ -126,9 +126,9 @@
     <img src="supra 1.jpg" alt="Auto 1">
     <img src="supra 2.jpg" alt="Auto 2">
     <img src="supra 3.jpg" alt="Auto 3">
-    <img src="supra 4.jpg" alt="Auto 4">
+    <img src="supra 7.jpg" alt="Auto 4">
     <img src="supra 5.jpg" alt="Auto 5">
-    <img src="supra 7.jpg" alt="Auto 6">
+    <img src="supra 4.jpg" alt="Auto 6">
      </div>
   <hr class="divider">
   <div class="gallery">
