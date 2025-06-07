@@ -125,7 +125,7 @@
     <img src="supra 1.jpg" alt="Auto 1">
     <img src="supra 2.jpg" alt="Auto 2">
     <img src="supra 3.jpg" alt="Auto 3">
-    <img src="supra 6.jpg" alt="Auto 4">
+    <img src="supra%206.JPG" alt="Auto 4">
     <img src="supra 5.jpg" alt="Auto 5">
     <img src="supra%204.jpg" alt="Auto 6">
      </div>
@@ -147,7 +147,7 @@
   <div class="gallery">
     <img src="natalia 1.jpg" alt="Portret 1">
     <img src="natalia 2.jpg" alt="Portret 2">
-    <img src="natalia%208.jpg" alt="Portret 3">
+    <img src="natalia%206.jpg" alt="Portret 3">
     <img src="natalia 4.jpg" alt="Portret 4">
     <img src="natalia 5.jpg" alt="Portret 5">
     <img src="natalia%208.jpg" alt="Portret 6">
