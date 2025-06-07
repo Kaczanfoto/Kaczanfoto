@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -181,8 +180,8 @@
   <div class="gallery">
     <img src="grzesiu 1.jpg" alt="Motor 1">
     <img src="kask malgosia.jpg" alt="Motor 2">
-    <img src="malgosia%202.jpg" alt="Motor 3">
-    <img src="malgosia%203.jpg" alt="Motor 4">
+    <img src="malgosia 2.jpg" alt="Motor 3">
+    <img src="malgosia 3.jpg" alt="Motor 4">
     <img src="malowanie.jpg" alt="Motor 5">
     <img src="stunt duke.jpg" alt="Motor 6">
   </div>
