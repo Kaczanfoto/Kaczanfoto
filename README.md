@@ -145,10 +145,10 @@
     <img src="kamil 3.jpg" alt="Auto 15">
     <img src="gabi 1.jpg" alt="Auto 16">
     <img src="gabi 2.jpg" alt="Auto 17">
-    <img src="gabi 3 .jpg" alt="Auto 18">
+    <img src="gabi 3.jpg" alt="Auto 18">
     <img src="gabi 4.jpg" alt="Auto 19">
     <img src="gabi 5.jpg" alt="Auto 20">
-    <img src="gabi 6 .jpg" alt="Auto 21">
+    <img src="gabi 6.jpg" alt="Auto 21">
     
   </div>
   
