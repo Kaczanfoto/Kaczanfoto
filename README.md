@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -135,7 +134,6 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
   </style>
 </head>
 <body>
@@ -152,11 +150,9 @@
   <button onclick="showSection('o-mnie')">O mnie</button>
   <button onclick="showSection('kontakt')">Kontakt</button>
 </nav>
-
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
-<section id="auta" class="category-section active">
-  
+
   <h3>Sesja Supra</h3>
   <div class="gallery">
     <img src="supra 1.jpg" alt="Supra 1" onclick="openLightbox(this)">
@@ -255,10 +251,8 @@
   function showSection(id) {
     const sections = document.querySelectorAll('.category-section');
     const buttons = document.querySelectorAll('nav button');
-
     sections.forEach(section => section.classList.remove('active'));
     buttons.forEach(btn => btn.classList.remove('active-tab'));
-
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active-tab');
   }
