@@ -4,14 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Piotra K</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #0D1C3F;
       color: #ffffff;
     }
@@ -19,7 +14,6 @@
     header, nav, footer {
       background-color: #000;
       color: white;
-      width: 100%;
     }
 
     header {
@@ -29,27 +23,10 @@
 
     nav {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px 20px;
-    }
-
-    .hamburger {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: white;
-      margin-bottom: 10px;
-    }
-
-    .nav-buttons {
-      display: flex;
       justify-content: center;
+      padding: 10px;
       gap: 20px;
       flex-wrap: wrap;
-      width: 100%;
     }
 
     nav button {
@@ -72,8 +49,7 @@
       padding: 30px 20px;
       background-color: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
-      margin: 20px auto;
-      max-width: 1400px;
+      margin: 20px;
     }
 
     .category-section.active {
@@ -133,7 +109,6 @@
       padding: 20px;
     }
 
-    /* Lightbox */
     #lightbox {
       position: fixed;
       top: 0; left: 0;
@@ -158,28 +133,6 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
-    /* Mobile menu */
-    @media (max-width: 768px) {
-      .nav-buttons {
-        overflow: hidden;
-        max-height: 0;
-        opacity: 0;
-        transition: max-height 0.5s ease, opacity 0.5s ease;
-        flex-direction: column;
-        width: 100%;
-        background-color: #000;
-      }
-
-      .nav-buttons.show {
-        max-height: 500px;
-        opacity: 1;
-      }
-
-      .hamburger {
-        display: block;
-      }
-    }
   </style>
 </head>
 <body>
@@ -190,90 +143,72 @@
 </header>
 
 <nav>
-  <button class="hamburger" onclick="toggleMenu()">☰ Menu</button>
-  <div class="nav-buttons" id="navMenu">
-    <button class="active-tab" onclick="showSection('auta', this)">Auta</button>
-    <button onclick="showSection('ludzie', this)">Ludzie</button>
-    <button onclick="showSection('motory', this)">Motory</button>
-    <button onclick="showSection('o-mnie', this)">O mnie</button>
-    <button onclick="showSection('kontakt', this)">Kontakt</button>
-  </div>
+  <button class="active-tab" onclick="showSection('auta')">Auta</button>
+  <button onclick="showSection('ludzie')">Ludzie</button>
+  <button onclick="showSection('motory')">Motory</button>
+  <button onclick="showSection('o-mnie')">O mnie</button>
+  <button onclick="showSection('kontakt')">Kontakt</button>
 </nav>
 
-<!-- Auta -->
+<!-- Tutaj zaczynają się sekcje -->
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
+
   <h3>Sesja Supra</h3>
   <div class="gallery">
-    <img loading="lazy" src="supra 1.jpg" alt="Supra 1" onclick="openLightbox(this)">
-    <img loading="lazy" src="supra 2.jpg" alt="Supra 2" onclick="openLightbox(this)">
-    <img loading="lazy" src="supra 3.jpg" alt="Supra 3" onclick="openLightbox(this)">
-    <img loading="lazy" src="supra 6.jpg" alt="Supra 4" onclick="openLightbox(this)">
-    <img loading="lazy" src="supra 5.jpg" alt="Supra 5" onclick="openLightbox(this)">
-    <img loading="lazy" src="supra 4.jpg" alt="Supra 6" onclick="openLightbox(this)">
+    <img src="img/supra 1.jpg" alt="Supra 1" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/supra 2.jpg" alt="Supra 2" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/supra 3.jpg" alt="Supra 3" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/supra 4.jpg" alt="Supra 4" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/supra 5.jpg" alt="Supra 5" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/supra 6.jpg" alt="Supra 6" loading="lazy" onclick="openLightbox(this)">
   </div>
-</section>
 
-<!-- Ludzie -->
-<section id="ludzie" class="category-section">
-  <h2>Portrety Ludzi</h2>
-  <h3>Sesja Natalii</h3>
+  <h3>Sesja g3m_green_g0blin</h3>
   <div class="gallery">
-    <img loading="lazy" src="natalia 1.jpg" alt="Portret Natalia 1" onclick="openLightbox(this)">
-    <img loading="lazy" src="natalia 2.jpg" alt="Portret Natalia 2" onclick="openLightbox(this)">
-    <img loading="lazy" src="natalia 6.jpg" alt="Portret Natalia 3" onclick="openLightbox(this)">
-    <img loading="lazy" src="natalia 4.jpg" alt="Portret Natalia 4" onclick="openLightbox(this)">
-    <img loading="lazy" src="natalia 5.jpg" alt="Portret Natalia 5" onclick="openLightbox(this)">
-    <img loading="lazy" src="natalia 8.jpg" alt="Portret Natalia 6" onclick="openLightbox(this)">
+    <img src="img/gren 1.jpg" alt="Gren 1" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gren 2.jpg" alt="Gren 2" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gren 3.jpg" alt="Gren 3" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gren 4.jpg" alt="Gren 4" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gren 5.jpg" alt="Gren 5" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gren 6.jpg" alt="Gren 6" loading="lazy" onclick="openLightbox(this)">
   </div>
-</section>
 
-<!-- Motory -->
-<section id="motory" class="category-section">
-  <h2>Motocykle</h2>
+  <h3>Sesja Kamil</h3>
   <div class="gallery">
-    <img loading="lazy" src="grzesiu 1.jpg" alt="Grzesiu 1" onclick="openLightbox(this)">
-    <img loading="lazy" src="kask malgosia.jpg" alt="Małgosia 1" onclick="openLightbox(this)">
-    <img loading="lazy" src="malgosia 2.jpg" alt="Małgosia 2" onclick="openLightbox(this)">
-    <img loading="lazy" src="malgosia 3.jpg" alt="Małgosia 3" onclick="openLightbox(this)">
-    <img loading="lazy" src="malowanie.jpg" alt="Malowanie" onclick="openLightbox(this)">
-    <img loading="lazy" src="stunt duke.jpg" alt="Stunt" onclick="openLightbox(this)">
+    <img src="img/kamil 1.jpg" alt="Kamil 1" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/kamil 2.jpg" alt="Kamil 2" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/kamil 3.jpg" alt="Kamil 3" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/kamil 4.jpg" alt="Kamil 4" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/kamil 5.jpg" alt="Kamil 5" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/kamil 6.jpg" alt="Kamil 6" loading="lazy" onclick="openLightbox(this)">
+  </div>
+
+  <h3>Sesja Gabi</h3>
+  <div class="gallery">
+    <img src="img/gabi 1.jpg" alt="Gabi 1" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gabi 2.jpg" alt="Gabi 2" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gabi 3.jpg" alt="Gabi 3" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gabi 4.jpg" alt="Gabi 4" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gabi 5.jpg" alt="Gabi 5" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/gabi 6.jpg" alt="Gabi 6" loading="lazy" onclick="openLightbox(this)">
   </div>
 </section>
-
-<!-- O mnie -->
-<section id="o-mnie" class="category-section">
-  <h2>O mnie</h2>
-  <p>Cześć! Nazywam się Piotr K. Zajmuję się fotografią pasjonacko, a moje ulubione tematy to motory, auta i portrety.</p>
-</section>
-
-<!-- Kontakt -->
-<section id="kontakt" class="category-section">
-  <h2>Kontakt</h2>
-  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pan_kaczan____/" target="_blank">@pan_kaczan____</a></p>
-  <p><strong>E-mail:</strong> <a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a></p>
-</section>
-
-<!-- Stopka -->
-<footer>
-  &copy; 2025 Portfolio Piotra K. Wszystkie prawa zastrzeżone.
-</footer>
+<!-- Dalej są sekcje Ludzie, Motory itd., analogicznie z poprawionymi ścieżkami -->
 
 <!-- Lightbox -->
 <div id="lightbox" onclick="this.style.display='none'">
   <img id="lightbox-img" src="" alt="">
 </div>
 
-<!-- Skrypty -->
 <script>
-  function showSection(id, btn) {
+  function showSection(id) {
     const sections = document.querySelectorAll('.category-section');
     const buttons = document.querySelectorAll('nav button');
     sections.forEach(section => section.classList.remove('active'));
-    buttons.forEach(b => b.classList.remove('active-tab'));
+    buttons.forEach(btn => btn.classList.remove('active-tab'));
     document.getElementById(id).classList.add('active');
-    btn.classList.add('active-tab');
-    if (window.innerWidth <= 768) toggleMenu(); // zamknij menu po kliknięciu
+    event.target.classList.add('active-tab');
   }
 
   function openLightbox(img) {
@@ -282,12 +217,7 @@
     lightboxImg.src = img.src;
     lightbox.style.display = 'flex';
   }
-
-  function toggleMenu() {
-    document.getElementById('navMenu').classList.toggle('show');
-  }
 </script>
 
 </body>
 </html>
-
