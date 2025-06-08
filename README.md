@@ -158,9 +158,96 @@
   </div>
 </nav>
 
-<!-- GALERIE - wstawione zostaną wszystkie zdjęcia z oryginału -->
-<!-- (z powodu długości, kolejne galerie są w kolejnych aktualizacjach dokumentu) -->
+<section id="auta" class="category-section active">
+  <h2>Zdjęcia Aut</h2>
 
+  <h3>Sesja Supra</h3>
+  <div class="gallery">
+    <img src="supra 1.jpg" alt="Supra 1" onclick="openLightbox(this)">
+    <img src="supra 2.jpg" alt="Supra 2" onclick="openLightbox(this)">
+    <img src="supra 3.jpg" alt="Supra 3" onclick="openLightbox(this)">
+    <img src="supra 6.jpg" alt="Supra 4" onclick="openLightbox(this)">
+    <img src="supra 5.jpg" alt="Supra 5" onclick="openLightbox(this)">
+    <img src="supra 4.jpg" alt="Supra 6" onclick="openLightbox(this)">
+  </div>
+
+  <h3>Sesja g3m_green_g0blin</h3>
+  <div class="gallery">
+    <img src="gren 1.jpg" alt="Gren 1" onclick="openLightbox(this)">
+    <img src="gren 6.jpg" alt="Gren 2" onclick="openLightbox(this)">
+    <img src="gren 3.jpg" alt="Gren 3" onclick="openLightbox(this)">
+    <img src="gren 4.jpg" alt="Gren 4" onclick="openLightbox(this)">
+    <img src="gren 5.jpg" alt="Gren 5" onclick="openLightbox(this)">
+    <img src="gren 2.jpg" alt="Gren 6" onclick="openLightbox(this)">
+  </div>
+
+  <h3>Sesja Kamil</h3>
+  <div class="gallery">
+    <img src="kamil 1.jpg" alt="Kamil 1" onclick="openLightbox(this)">
+    <img src="kamil 2.jpg" alt="Kamil 2" onclick="openLightbox(this)">
+    <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
+    <img src="kamil 4.jpg" alt="Kamil 4" onclick="openLightbox(this)">
+    <img src="kamil 5.jpg" alt="Kamil 5" onclick="openLightbox(this)">
+    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)"> 
+  </div>
+
+  <h3>Sesja Gabi</h3>
+  <div class="gallery">
+    <img src="gabi 1.jpg" alt="Gabi 1" onclick="openLightbox(this)">
+    <img src="gabi 2.jpg" alt="Gabi 2" onclick="openLightbox(this)">
+    <img src="gabi 3.jpg" alt="Gabi 3" onclick="openLightbox(this)">
+    <img src="gabi 4.jpg" alt="Gabi 4" onclick="openLightbox(this)">
+    <img src="gabi 5.jpg" alt="Gabi 5" onclick="openLightbox(this)">
+    <img src="gabi 6.jpg" alt="Gabi 6" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<section id="ludzie" class="category-section">
+  <h2>Portrety Ludzi</h2>
+
+  <h3>Sesja Natalii</h3>
+  <div class="gallery">
+    <img src="natalia 1.jpg" alt="Portret Natalia 1" onclick="openLightbox(this)">
+    <img src="natalia 2.jpg" alt="Portret Natalia 2" onclick="openLightbox(this)">
+    <img src="natalia 6.jpg" alt="Portret Natalia 3" onclick="openLightbox(this)">
+    <img src="natalia 4.jpg" alt="Portret Natalia 4" onclick="openLightbox(this)">
+    <img src="natalia 5.jpg" alt="Portret Natalia 5" onclick="openLightbox(this)">
+    <img src="natalia 8.jpg" alt="Portret Natalia 6" onclick="openLightbox(this)">
+  </div>
+
+  <h3>Sesja Rudej</h3>
+  <div class="gallery">
+    <img src="Ruda.jpg" alt="Ruda 1" onclick="openLightbox(this)">
+    <img src="Ruda 2.jpg" alt="Ruda 2" onclick="openLightbox(this)">
+    <img src="Ruda 3.jpg" alt="Ruda 3" onclick="openLightbox(this)">
+    <img src="Ruda 4.jpg" alt="Ruda 4" onclick="openLightbox(this)">
+    <img src="Ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
+    <img src="Ruda 1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<section id="motory" class="category-section">
+  <h2>Motocykle</h2>
+  <div class="gallery">
+    <img src="grzesiu 1.jpg" alt="Grzesiu 1" onclick="openLightbox(this)">
+    <img src="kask malgosia.jpg" alt="Małgosia 1" onclick="openLightbox(this)">
+    <img src="malgosia 2.jpg" alt="Małgosia 2" onclick="openLightbox(this)">
+    <img src="malgosia 3.jpg" alt="Małgosia 3" onclick="openLightbox(this)">
+    <img src="malowanie.jpg" alt="Malowanie" onclick="openLightbox(this)">
+    <img src="stunt duke.jpg" alt="Stunt" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<section id="o-mnie" class="category-section">
+  <h2>O mnie</h2>
+  <p>Cześć! Nazywam się Piotr. Zajmuję się fotografią pasjonacko, a moje ulubione tematy to motory, auta i portrety.</p>
+</section>
+
+<section id="kontakt" class="category-section">
+  <h2>Kontakt</h2>
+  <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pan_kaczan____/" target="_blank">@pan_kaczan____</a></p>
+  <p><strong>E-mail:</strong> <a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a></p>
+</section>
 <footer>
   &copy; 2025 Portfolio Piotra K. Wszystkie prawa zastrzeżone.
 </footer>
