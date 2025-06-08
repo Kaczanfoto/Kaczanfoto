@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -13,7 +12,7 @@
     }
 
     header, nav, footer {
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(75, 75, 77);
       color: white;
     }
 
@@ -193,32 +192,26 @@
 
   <h3>Sesja Supra</h3>
   <div class="gallery">
-    
     <img src="supra 1.jpg" alt="Supra 1" onclick="openLightbox(this)">
     <img src="supra 2.jpg" alt="Supra 2" onclick="openLightbox(this)">
     <img src="supra 3.jpg" alt="Supra 3" onclick="openLightbox(this)">
     <img src="supra 6.jpg" alt="Supra 4" onclick="openLightbox(this)">
     <img src="supra 5.jpg" alt="Supra 5" onclick="openLightbox(this)">
     <img src="supra 4.jpg" alt="Supra 6" onclick="openLightbox(this)">
-    
   </div>
 
   <h3>Sesja g3m_green_g0blin</h3>
   <div class="gallery">
-    
     <img src="gren 1.jpg" alt="Gren 1" onclick="openLightbox(this)">
     <img src="gren 6.jpg" alt="Gren 2" onclick="openLightbox(this)">
     <img src="gren 3.jpg" alt="Gren 3" onclick="openLightbox(this)">
     <img src="gren 4.jpg" alt="Gren 4" onclick="openLightbox(this)">
     <img src="gren 5.jpg" alt="Gren 5" onclick="openLightbox(this)">
     <img src="gren 2.jpg" alt="Gren 6" onclick="openLightbox(this)">
-    
   </div>
-  
 
   <h3>Sesja Kamil</h3>
   <div class="gallery">
-    
     <img src="kamil 1.jpg" alt="Kamil 1" onclick="openLightbox(this)">
     <img src="kamil 2.jpg" alt="Kamil 2" onclick="openLightbox(this)">
     <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
@@ -229,7 +222,6 @@
 
   <h3>Sesja Gabi</h3>
   <div class="gallery">
-    
     <img src="gabi 1.jpg" alt="Gabi 1" onclick="openLightbox(this)">
     <img src="gabi 2.jpg" alt="Gabi 2" onclick="openLightbox(this)">
     <img src="gabi 3.jpg" alt="Gabi 3" onclick="openLightbox(this)">
@@ -237,7 +229,6 @@
     <img src="gabi 5.jpg" alt="Gabi 5" onclick="openLightbox(this)">
     <img src="gabi 6.jpg" alt="Gabi 6" onclick="openLightbox(this)">
   </div>
-  
 </section>
 
 <section id="ludzie" class="category-section">
@@ -245,7 +236,6 @@
 
   <h3>Sesja Natalii</h3>
   <div class="gallery">
-    
     <img src="natalia 1.jpg" alt="Portret Natalia 1" onclick="openLightbox(this)">
     <img src="natalia 2.jpg" alt="Portret Natalia 2" onclick="openLightbox(this)">
     <img src="natalia 6.jpg" alt="Portret Natalia 3" onclick="openLightbox(this)">
@@ -256,7 +246,6 @@
 
   <h3>Sesja Rudej</h3>
   <div class="gallery">
-    
     <img src="Ruda.jpg" alt="Ruda 1" onclick="openLightbox(this)">
     <img src="Ruda 2.jpg" alt="Ruda 2" onclick="openLightbox(this)">
     <img src="Ruda 3.jpg" alt="Ruda 3" onclick="openLightbox(this)">
