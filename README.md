@@ -63,12 +63,11 @@
         display: block;
       }
     }
-    .category-section {
+    .category-section
       display: none;
       padding: 0;
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
-    }
     .category-section.active {
       display: block;
       opacity: 1;
