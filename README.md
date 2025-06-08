@@ -4,6 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Piotra K</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -21,7 +25,6 @@
       text-align: center;
     }
 
-    /* MENU */
     .nav-wrapper {
       display: flex;
       justify-content: space-between;
@@ -76,10 +79,7 @@
 
     .category-section {
       display: none;
-      padding: 30px 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      margin: 20px;
+      padding: 0;
     }
 
     .category-section.active {
@@ -87,14 +87,14 @@
     }
 
     .category-section h2 {
-      margin-bottom: 20px;
+      margin: 40px 20px 20px;
       border-left: 6px solid #66ccff;
       padding-left: 10px;
       color: #66ccff;
     }
 
     .category-section h3 {
-      margin-top: 40px;
+      margin: 40px 20px 20px;
       color: #66ccff;
     }
 
@@ -102,7 +102,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       gap: 15px;
-      margin-bottom: 30px;
+      width: 100%;
+      padding: 0 10px 30px;
     }
 
     .gallery img {
@@ -140,7 +141,6 @@
       padding: 20px;
     }
 
-    /* Lightbox */
     #lightbox {
       position: fixed;
       top: 0; left: 0;
@@ -189,81 +189,29 @@
 
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
-
   <h3>Sesja Supra</h3>
   <div class="gallery">
     <img src="supra 1.jpg" alt="Supra 1" onclick="openLightbox(this)">
     <img src="supra 2.jpg" alt="Supra 2" onclick="openLightbox(this)">
     <img src="supra 3.jpg" alt="Supra 3" onclick="openLightbox(this)">
-    <img src="supra 6.jpg" alt="Supra 4" onclick="openLightbox(this)">
-    <img src="supra 5.jpg" alt="Supra 5" onclick="openLightbox(this)">
-    <img src="supra 4.jpg" alt="Supra 6" onclick="openLightbox(this)">
-  </div>
-
-  <h3>Sesja g3m_green_g0blin</h3>
-  <div class="gallery">
-    <img src="gren 1.jpg" alt="Gren 1" onclick="openLightbox(this)">
-    <img src="gren 6.jpg" alt="Gren 2" onclick="openLightbox(this)">
-    <img src="gren 3.jpg" alt="Gren 3" onclick="openLightbox(this)">
-    <img src="gren 4.jpg" alt="Gren 4" onclick="openLightbox(this)">
-    <img src="gren 5.jpg" alt="Gren 5" onclick="openLightbox(this)">
-    <img src="gren 2.jpg" alt="Gren 6" onclick="openLightbox(this)">
-  </div>
-
-  <h3>Sesja Kamil</h3>
-  <div class="gallery">
-    <img src="kamil 1.jpg" alt="Kamil 1" onclick="openLightbox(this)">
-    <img src="kamil 2.jpg" alt="Kamil 2" onclick="openLightbox(this)">
-    <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
-    <img src="kamil 4.jpg" alt="Kamil 4" onclick="openLightbox(this)">
-    <img src="kamil 5.jpg" alt="Kamil 5" onclick="openLightbox(this)">
-    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)"> 
-  </div>
-
-  <h3>Sesja Gabi</h3>
-  <div class="gallery">
-    <img src="gabi 1.jpg" alt="Gabi 1" onclick="openLightbox(this)">
-    <img src="gabi 2.jpg" alt="Gabi 2" onclick="openLightbox(this)">
-    <img src="gabi 3.jpg" alt="Gabi 3" onclick="openLightbox(this)">
-    <img src="gabi 4.jpg" alt="Gabi 4" onclick="openLightbox(this)">
-    <img src="gabi 5.jpg" alt="Gabi 5" onclick="openLightbox(this)">
-    <img src="gabi 6.jpg" alt="Gabi 6" onclick="openLightbox(this)">
   </div>
 </section>
 
 <section id="ludzie" class="category-section">
   <h2>Portrety Ludzi</h2>
-
   <h3>Sesja Natalii</h3>
   <div class="gallery">
-    <img src="natalia 1.jpg" alt="Portret Natalia 1" onclick="openLightbox(this)">
-    <img src="natalia 2.jpg" alt="Portret Natalia 2" onclick="openLightbox(this)">
-    <img src="natalia 6.jpg" alt="Portret Natalia 3" onclick="openLightbox(this)">
-    <img src="natalia 4.jpg" alt="Portret Natalia 4" onclick="openLightbox(this)">
-    <img src="natalia 5.jpg" alt="Portret Natalia 5" onclick="openLightbox(this)">
-    <img src="natalia 8.jpg" alt="Portret Natalia 6" onclick="openLightbox(this)">
-  </div>
-
-  <h3>Sesja Rudej</h3>
-  <div class="gallery">
-    <img src="Ruda.jpg" alt="Ruda 1" onclick="openLightbox(this)">
-    <img src="Ruda 2.jpg" alt="Ruda 2" onclick="openLightbox(this)">
-    <img src="Ruda 3.jpg" alt="Ruda 3" onclick="openLightbox(this)">
-    <img src="Ruda 4.jpg" alt="Ruda 4" onclick="openLightbox(this)">
-    <img src="Ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
-    <img src="Ruda 1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
+    <img src="natalia 1.jpg" alt="Natalia 1" onclick="openLightbox(this)">
+    <img src="natalia 2.jpg" alt="Natalia 2" onclick="openLightbox(this)">
+    <img src="natalia 3.jpg" alt="Natalia 3" onclick="openLightbox(this)">
   </div>
 </section>
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
   <div class="gallery">
-    <img src="grzesiu 1.jpg" alt="Grzesiu 1" onclick="openLightbox(this)">
-    <img src="kask malgosia.jpg" alt="Małgosia 1" onclick="openLightbox(this)">
-    <img src="malgosia 2.jpg" alt="Małgosia 2" onclick="openLightbox(this)">
-    <img src="malgosia 3.jpg" alt="Małgosia 3" onclick="openLightbox(this)">
-    <img src="malowanie.jpg" alt="Malowanie" onclick="openLightbox(this)">
-    <img src="stunt duke.jpg" alt="Stunt" onclick="openLightbox(this)">
+    <img src="moto1.jpg" alt="Motocykl 1" onclick="openLightbox(this)">
+    <img src="moto2.jpg" alt="Motocykl 2" onclick="openLightbox(this)">
   </div>
 </section>
 
@@ -282,7 +230,6 @@
   &copy; 2025 Portfolio Piotra K. Wszystkie prawa zastrzeżone.
 </footer>
 
-<!-- Lightbox -->
 <div id="lightbox" onclick="this.style.display='none'">
   <img id="lightbox-img" src="" alt="">
 </div>
