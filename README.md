@@ -228,3 +228,5 @@
     event.target.classList.add('active-tab');
   }
 </script>
+</body>
+</html>
