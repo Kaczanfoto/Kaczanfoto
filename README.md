@@ -7,19 +7,19 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #1a1a1a;
-      color: #ddd;
+      background: linear-gradient(180deg, #a0cfff, #d0eaff); /* pastelowy niebieski gradient */
+      color: #1a1a1a;
     }
 
     header {
-      background-color: #111;
+      background-color: #000;
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
 
     nav {
-      background-color: #1e1e1e;
+      background-color: #000;
       display: flex;
       justify-content: center;
       padding: 10px;
@@ -39,14 +39,16 @@
 
     nav button:hover,
     nav button.active-tab {
-      border-bottom: 2px solid #f39c12;
+      border-bottom: 2px solid #66ccff; /* jasnoniebieski akcent */
     }
 
     .category-section {
       display: none;
       padding: 30px 20px;
-      background-color: #2a2a2a;
-      color: #f0f0f0;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+      border-radius: 10px;
+      margin: 20px;
     }
 
     .category-section.active {
@@ -55,13 +57,13 @@
 
     .category-section h2 {
       margin-bottom: 20px;
-      border-left: 6px solid #f39c12;
+      border-left: 6px solid #66ccff;
       padding-left: 10px;
     }
 
     .category-section h3 {
       margin-top: 40px;
-      color: #f39c12;
+      color: #007acc;
     }
 
     .gallery {
@@ -74,23 +76,24 @@
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     #o-mnie, #kontakt {
-      background-color: #2a2a2a;
+      background-color: rgba(255, 255, 255, 0.85);
       padding: 40px 20px;
       margin-top: 20px;
-      border-top: 4px solid #f39c12;
+      border-top: 4px solid #66ccff;
+      border-radius: 10px;
     }
 
     #o-mnie h2, #kontakt h2 {
       margin-top: 0;
-      color: #f39c12;
+      color: #007acc;
     }
 
     #kontakt a {
-      color: #f39c12;
+      color: #007acc;
       text-decoration: none;
     }
 
@@ -101,7 +104,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #111;
+      background-color: #000;
       color: white;
     }
   </style>
@@ -124,7 +127,7 @@
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
 
-  <h3>Sesja Supra </h3>
+  <h3>Sesja Supra</h3>
   <div class="gallery">
     <img src="supra 1.jpg" alt="Supra 1">
     <img src="supra 2.jpg" alt="Supra 2">
@@ -163,9 +166,9 @@
 </section>
 
 <section id="ludzie" class="category-section">
-  <h2>Portrety Ludzi </h2>
+  <h2>Portrety Ludzi</h2>
 
-  <h3>Sesja Natalii </h3>
+  <h3>Sesja Natalii</h3>
   <div class="gallery">
     <img src="natalia 1.jpg" alt="Portret Natalia 1">
     <img src="natalia 2.jpg" alt="Portret Natalia 2">
@@ -175,7 +178,7 @@
     <img src="natalia 8.jpg" alt="Portret Natalia 6">
   </div>
 
-  <h3>Sesja Rudej </h3>
+  <h3>Sesja Rudej</h3>
   <div class="gallery">
     <img src="ruda.jpg" alt="Ruda 1">
     <img src="ruda 2.jpg" alt="Ruda 2">
@@ -188,6 +191,7 @@
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
+  <div class="gallery">
     <img src="grzesiu 1.jpg" alt="Grzesiu 1">
     <img src="kask malgosia.jpg" alt="Małgosia 1">
     <img src="malgosia 2.jpg" alt="Małgosia 2">
@@ -227,4 +231,3 @@
 
 </body>
 </html>
-
