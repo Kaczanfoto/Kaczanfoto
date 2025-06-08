@@ -206,12 +206,12 @@
 
   <h3>Sesja Rudej</h3>
   <div class="gallery">
-    <img src="ruda.jpg" alt="Ruda 1" onclick="openLightbox(this)">
-    <img src="ruda 2.jpg" alt="Ruda 2" onclick="openLightbox(this)">
-    <img src="ruda 3.jpg" alt="Ruda 3" onclick="openLightbox(this)">
-    <img src="ruda 4.jpg" alt="Ruda 4" onclick="openLightbox(this)">
-    <img src="ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
-    <img src="rada1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
+    <img src="Ruda.jpg" alt="Ruda 1" onclick="openLightbox(this)">
+    <img src="Ruda 2.jpg" alt="Ruda 2" onclick="openLightbox(this)">
+    <img src="Ruda 3.jpg" alt="Ruda 3" onclick="openLightbox(this)">
+    <img src="Ruda 4.jpg" alt="Ruda 4" onclick="openLightbox(this)">
+    <img src="Ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
+    <img src="Ruda 1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
   </div>
 </section>
 
