@@ -66,9 +66,12 @@
     .category-section {
       display: none;
       padding: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
     }
     .category-section.active {
       display: block;
+      opacity: 1;
     }
     .category-section h2, .category-section h3 {
       margin: 40px 20px 20px;
@@ -84,6 +87,9 @@
       gap: 15px;
       width: 100%;
       padding: 0 10px 30px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-in-out forwards;
     }
     .gallery img {
       width: 100%;
@@ -91,10 +97,17 @@
       border-radius: 8px;
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .gallery img:hover {
-      transform: scale(1.02);
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     #o-mnie, #kontakt {
       background-color: rgba(255, 255, 255, 0.07);
@@ -124,17 +137,30 @@
       justify-content: center;
       align-items: center;
       z-index: 9999;
-      animation: fadeIn 0.5s ease-in-out;
+      animation: fadeInLightbox 0.4s ease-in-out forwards;
     }
     #lightbox img {
       max-width: 90%;
       max-height: 80%;
       border-radius: 8px;
       box-shadow: 0 0 20px #66ccff;
+      transform: scale(0.8);
+      opacity: 0;
+      animation: scaleIn 0.4s ease-in-out forwards;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
+    }
+    @keyframes fadeInLightbox {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes scaleIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
   </style>
 </head>
