@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -12,7 +13,7 @@
     }
 
     header, nav, footer {
-      background-color: #000;
+      background-color: rgb(0, 0, 0);
       color: white;
     }
 
@@ -21,10 +22,16 @@
       text-align: center;
     }
 
-    nav {
+    /* MENU */
+    .nav-wrapper {
       display: flex;
-      justify-content: center;
-      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .nav-buttons {
+      display: flex;
       gap: 20px;
       flex-wrap: wrap;
     }
@@ -42,6 +49,30 @@
     nav button:hover,
     nav button.active-tab {
       border-bottom: 2px solid #66ccff;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-buttons {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        margin-top: 10px;
+      }
+
+      .nav-buttons.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
     }
 
     .category-section {
@@ -77,6 +108,7 @@
 
     .gallery img {
       width: 100%;
+      height: auto;
       border-radius: 8px;
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -144,12 +176,18 @@
 </header>
 
 <nav>
-  <button class="active-tab" onclick="showSection('auta')">Auta</button>
-  <button onclick="showSection('ludzie')">Ludzie</button>
-  <button onclick="showSection('motory')">Motory</button>
-  <button onclick="showSection('o-mnie')">O mnie</button>
-  <button onclick="showSection('kontakt')">Kontakt</button>
+  <div class="nav-wrapper">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-buttons" id="navMenu">
+      <button class="active-tab" onclick="showSection('auta')">Auta</button>
+      <button onclick="showSection('ludzie')">Ludzie</button>
+      <button onclick="showSection('motory')">Motory</button>
+      <button onclick="showSection('o-mnie')">O mnie</button>
+      <button onclick="showSection('kontakt')">Kontakt</button>
+    </div>
+  </div>
 </nav>
+
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
 
@@ -253,11 +291,15 @@
 <script>
   function showSection(id) {
     const sections = document.querySelectorAll('.category-section');
-    const buttons = document.querySelectorAll('nav button');
+    const buttons = document.querySelectorAll('.nav-buttons button');
     sections.forEach(section => section.classList.remove('active'));
     buttons.forEach(btn => btn.classList.remove('active-tab'));
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active-tab');
+    const navMenu = document.getElementById('navMenu');
+    if (navMenu.classList.contains('show')) {
+      navMenu.classList.remove('show');
+    }
   }
 
   function openLightbox(img) {
@@ -265,6 +307,11 @@
     const lightboxImg = document.getElementById('lightbox-img');
     lightboxImg.src = img.src;
     lightbox.style.display = 'flex';
+  }
+
+  function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    menu.classList.toggle('show');
   }
 </script>
 
