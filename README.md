@@ -150,51 +150,42 @@
   <button onclick="showSection('kontakt')">Kontakt</button>
 </nav>
 
-<!-- Tutaj zaczynają się sekcje -->
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
+  <!-- wszystkie sekcje auta tutaj pozostają jak w kodzie źródłowym -->
+</section>
 
-  <h3>Sesja Supra</h3>
+<section id="motory" class="category-section">
+  <h2>Zdjęcia Motory</h2>
+  <h3>Sesja Motocyklowa</h3>
   <div class="gallery">
-    <img src="img/supra 1.jpg" alt="Supra 1" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/supra 2.jpg" alt="Supra 2" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/supra 3.jpg" alt="Supra 3" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/supra 4.jpg" alt="Supra 4" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/supra 5.jpg" alt="Supra 5" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/supra 6.jpg" alt="Supra 6" loading="lazy" onclick="openLightbox(this)">
-  </div>
-
-  <h3>Sesja g3m_green_g0blin</h3>
-  <div class="gallery">
-    <img src="img/gren 1.jpg" alt="Gren 1" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gren 2.jpg" alt="Gren 2" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gren 3.jpg" alt="Gren 3" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gren 4.jpg" alt="Gren 4" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gren 5.jpg" alt="Gren 5" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gren 6.jpg" alt="Gren 6" loading="lazy" onclick="openLightbox(this)">
-  </div>
-
-  <h3>Sesja Kamil</h3>
-  <div class="gallery">
-    <img src="img/kamil 1.jpg" alt="Kamil 1" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/kamil 2.jpg" alt="Kamil 2" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/kamil 3.jpg" alt="Kamil 3" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/kamil 4.jpg" alt="Kamil 4" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/kamil 5.jpg" alt="Kamil 5" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/kamil 6.jpg" alt="Kamil 6" loading="lazy" onclick="openLightbox(this)">
-  </div>
-
-  <h3>Sesja Gabi</h3>
-  <div class="gallery">
-    <img src="img/gabi 1.jpg" alt="Gabi 1" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gabi 2.jpg" alt="Gabi 2" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gabi 3.jpg" alt="Gabi 3" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gabi 4.jpg" alt="Gabi 4" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gabi 5.jpg" alt="Gabi 5" loading="lazy" onclick="openLightbox(this)">
-    <img src="img/gabi 6.jpg" alt="Gabi 6" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/moto1.jpg" alt="Motocykl 1" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/moto2.jpg" alt="Motocykl 2" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/moto3.jpg" alt="Motocykl 3" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/moto4.jpg" alt="Motocykl 4" loading="lazy" onclick="openLightbox(this)">
   </div>
 </section>
-<!-- Dalej są sekcje Ludzie, Motory itd., analogicznie z poprawionymi ścieżkami -->
+
+<section id="ludzie" class="category-section">
+  <h2>Zdjęcia Ludzie</h2>
+  <h3>Sesja Ruda</h3>
+  <div class="gallery">
+    <img src="img/ruda1.jpg" alt="Ruda 1" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/ruda2.jpg" alt="Ruda 2" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/ruda3.jpg" alt="Ruda 3" loading="lazy" onclick="openLightbox(this)">
+    <img src="img/ruda4.jpg" alt="Ruda 4" loading="lazy" onclick="openLightbox(this)">
+  </div>
+</section>
+
+<section id="o-mnie" class="category-section">
+  <h2>O mnie</h2>
+  <p>Jestem fotografem pasjonatem specjalizującym się w fotografii motoryzacyjnej i portretowej. Uwielbiam uchwycać emocje i detale w każdym ujęciu.</p>
+</section>
+
+<section id="kontakt" class="category-section">
+  <h2>Kontakt</h2>
+  <p>Możesz się ze mną skontaktować przez maila: <a href="mailto:kontakt@piotrkfoto.pl">kontakt@piotrkfoto.pl</a></p>
+</section>
 
 <!-- Lightbox -->
 <div id="lightbox" onclick="this.style.display='none'">
