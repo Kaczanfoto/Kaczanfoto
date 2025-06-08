@@ -1,19 +1,27 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Piotra K</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0D1C3F;
       color: #ffffff;
     }
 
     header, nav, footer {
-      background-color: rgb(0, 0, 0);
+      background-color: #000;
       color: white;
+      width: 100%;
     }
 
     header {
@@ -21,16 +29,10 @@
       text-align: center;
     }
 
-    /* MENU */
-    .nav-wrapper {
+    nav {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    .nav-buttons {
-      display: flex;
+      justify-content: center;
+      padding: 10px;
       gap: 20px;
       flex-wrap: wrap;
     }
@@ -50,36 +52,14 @@
       border-bottom: 2px solid #66ccff;
     }
 
-    .hamburger {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .nav-buttons {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #000;
-        margin-top: 10px;
-      }
-
-      .nav-buttons.show {
-        display: flex;
-      }
-
-      .hamburger {
-        display: block;
-      }
-    }
-
     .category-section {
       display: none;
       padding: 30px 20px;
       background-color: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
-      margin: 20px;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 1600px;
     }
 
     .category-section.active {
@@ -107,7 +87,6 @@
 
     .gallery img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
       cursor: pointer;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -165,6 +144,32 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
+    /* RESPONSYWNOŚĆ */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav button {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      header {
+        padding: 30px 10px;
+      }
+
+      .category-section {
+        margin: 10px;
+        padding: 20px 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -175,16 +180,11 @@
 </header>
 
 <nav>
-  <div class="nav-wrapper">
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="nav-buttons" id="navMenu">
-      <button class="active-tab" onclick="showSection('auta')">Auta</button>
-      <button onclick="showSection('ludzie')">Ludzie</button>
-      <button onclick="showSection('motory')">Motory</button>
-      <button onclick="showSection('o-mnie')">O mnie</button>
-      <button onclick="showSection('kontakt')">Kontakt</button>
-    </div>
-  </div>
+  <button class="active-tab" onclick="showSection('auta', event)">Auta</button>
+  <button onclick="showSection('ludzie', event)">Ludzie</button>
+  <button onclick="showSection('motory', event)">Motory</button>
+  <button onclick="showSection('o-mnie', event)">O mnie</button>
+  <button onclick="showSection('kontakt', event)">Kontakt</button>
 </nav>
 
 <section id="auta" class="category-section active">
@@ -192,43 +192,36 @@
 
   <h3>Sesja Supra</h3>
   <div class="gallery">
-    
     <img src="supra 1.jpg" alt="Supra 1" onclick="openLightbox(this)">
     <img src="supra 2.jpg" alt="Supra 2" onclick="openLightbox(this)">
     <img src="supra 3.jpg" alt="Supra 3" onclick="openLightbox(this)">
     <img src="supra 6.jpg" alt="Supra 4" onclick="openLightbox(this)">
     <img src="supra 5.jpg" alt="Supra 5" onclick="openLightbox(this)">
     <img src="supra 4.jpg" alt="Supra 6" onclick="openLightbox(this)">
-    
   </div>
 
   <h3>Sesja g3m_green_g0blin</h3>
   <div class="gallery">
-    
     <img src="gren 1.jpg" alt="Gren 1" onclick="openLightbox(this)">
     <img src="gren 6.jpg" alt="Gren 2" onclick="openLightbox(this)">
     <img src="gren 3.jpg" alt="Gren 3" onclick="openLightbox(this)">
     <img src="gren 4.jpg" alt="Gren 4" onclick="openLightbox(this)">
     <img src="gren 5.jpg" alt="Gren 5" onclick="openLightbox(this)">
     <img src="gren 2.jpg" alt="Gren 6" onclick="openLightbox(this)">
-    
   </div>
-  
 
   <h3>Sesja Kamil</h3>
   <div class="gallery">
-    
     <img src="kamil 1.jpg" alt="Kamil 1" onclick="openLightbox(this)">
     <img src="kamil 2.jpg" alt="Kamil 2" onclick="openLightbox(this)">
     <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
     <img src="kamil 4.jpg" alt="Kamil 4" onclick="openLightbox(this)">
     <img src="kamil 5.jpg" alt="Kamil 5" onclick="openLightbox(this)">
-    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)"> 
+    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)">
   </div>
 
   <h3>Sesja Gabi</h3>
   <div class="gallery">
-    
     <img src="gabi 1.jpg" alt="Gabi 1" onclick="openLightbox(this)">
     <img src="gabi 2.jpg" alt="Gabi 2" onclick="openLightbox(this)">
     <img src="gabi 3.jpg" alt="Gabi 3" onclick="openLightbox(this)">
@@ -236,7 +229,6 @@
     <img src="gabi 5.jpg" alt="Gabi 5" onclick="openLightbox(this)">
     <img src="gabi 6.jpg" alt="Gabi 6" onclick="openLightbox(this)">
   </div>
-  
 </section>
 
 <section id="ludzie" class="category-section">
@@ -244,7 +236,6 @@
 
   <h3>Sesja Natalii</h3>
   <div class="gallery">
-    
     <img src="natalia 1.jpg" alt="Portret Natalia 1" onclick="openLightbox(this)">
     <img src="natalia 2.jpg" alt="Portret Natalia 2" onclick="openLightbox(this)">
     <img src="natalia 6.jpg" alt="Portret Natalia 3" onclick="openLightbox(this)">
@@ -255,7 +246,6 @@
 
   <h3>Sesja Rudej</h3>
   <div class="gallery">
-    
     <img src="Ruda.jpg" alt="Ruda 1" onclick="openLightbox(this)">
     <img src="Ruda 2.jpg" alt="Ruda 2" onclick="openLightbox(this)">
     <img src="Ruda 3.jpg" alt="Ruda 3" onclick="openLightbox(this)">
@@ -298,17 +288,13 @@
 </div>
 
 <script>
-  function showSection(id) {
+  function showSection(id, event) {
     const sections = document.querySelectorAll('.category-section');
-    const buttons = document.querySelectorAll('.nav-buttons button');
+    const buttons = document.querySelectorAll('nav button');
     sections.forEach(section => section.classList.remove('active'));
     buttons.forEach(btn => btn.classList.remove('active-tab'));
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active-tab');
-    const navMenu = document.getElementById('navMenu');
-    if (navMenu.classList.contains('show')) {
-      navMenu.classList.remove('show');
-    }
   }
 
   function openLightbox(img) {
@@ -316,11 +302,6 @@
     const lightboxImg = document.getElementById('lightbox-img');
     lightboxImg.src = img.src;
     lightbox.style.display = 'flex';
-  }
-
-  function toggleMenu() {
-    const menu = document.getElementById('navMenu');
-    menu.classList.toggle('show');
   }
 </script>
 
