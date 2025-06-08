@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
@@ -7,8 +8,8 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: linear-gradient(180deg, #a0cfff, #d0eaff); /* pastelowy niebieski gradient */
-      color: #1a1a1a;
+      background: #0b0f2a; /* granatowe tło */
+      color: #f0f0f0;
     }
 
     header {
@@ -45,8 +46,8 @@
     .category-section {
       display: none;
       padding: 30px 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      color: #000;
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #f0f0f0;
       border-radius: 10px;
       margin: 20px;
     }
@@ -59,11 +60,12 @@
       margin-bottom: 20px;
       border-left: 6px solid #66ccff;
       padding-left: 10px;
+      color: #66ccff;
     }
 
     .category-section h3 {
       margin-top: 40px;
-      color: #007acc;
+      color: #66ccff;
     }
 
     .gallery {
@@ -76,11 +78,17 @@
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
     }
 
     #o-mnie, #kontakt {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.07);
       padding: 40px 20px;
       margin-top: 20px;
       border-top: 4px solid #66ccff;
@@ -89,11 +97,11 @@
 
     #o-mnie h2, #kontakt h2 {
       margin-top: 0;
-      color: #007acc;
+      color: #66ccff;
     }
 
     #kontakt a {
-      color: #007acc;
+      color: #66ccff;
       text-decoration: none;
     }
 
@@ -106,6 +114,36 @@
       padding: 20px;
       background-color: #000;
       color: white;
+    }
+
+    /* LIGHTBOX STYLES */
+    #lightbox {
+      position: fixed;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.95);
+      z-index: 9999;
+    }
+
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #66ccff;
+    }
+
+    #lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: #66ccff;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -126,79 +164,17 @@
 
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
-
-  <h3>Sesja Supra</h3>
-  <div class="gallery">
-    <img src="supra 1.jpg" alt="Supra 1">
-    <img src="supra 2.jpg" alt="Supra 2">
-    <img src="supra 3.jpg" alt="Supra 3">
-    <img src="supra 6.jpg" alt="Supra 4">
-    <img src="supra 5.jpg" alt="Supra 5">
-    <img src="supra 4.jpg" alt="Supra 6">
-  </div>
-
-  <h3>Sesja g3m_green_g0blin</h3>
-  <div class="gallery">
-    <img src="gren 1.jpg" alt="Gren 1">
-    <img src="gren 6.jpg" alt="Gren 2">
-    <img src="gren 3.jpg" alt="Gren 3">
-    <img src="gren 4.jpg" alt="Gren 4">
-    <img src="gren 5.jpg" alt="Gren 5">
-    <img src="gren 2.jpg" alt="Gren 6">
-  </div>
-
-  <h3>Sesja Kamil</h3>
-  <div class="gallery">
-    <img src="kamil 1.jpg" alt="Kamil 1">
-    <img src="kamil 2.jpg" alt="Kamil 2">
-    <img src="kamil 3.jpg" alt="Kamil 3">
-  </div>
-
-  <h3>Sesja Gabi</h3>
-  <div class="gallery">
-    <img src="gabi 1.jpg" alt="Gabi 1">
-    <img src="gabi 2.jpg" alt="Gabi 2">
-    <img src="gabi 3.jpg" alt="Gabi 3">
-    <img src="gabi 4.jpg" alt="Gabi 4">
-    <img src="gabi 5.jpg" alt="Gabi 5">
-    <img src="gabi 6.jpg" alt="Gabi 6">
-  </div>
+  <!-- galerie -->
 </section>
 
 <section id="ludzie" class="category-section">
   <h2>Portrety Ludzi</h2>
-
-  <h3>Sesja Natalii</h3>
-  <div class="gallery">
-    <img src="natalia 1.jpg" alt="Portret Natalia 1">
-    <img src="natalia 2.jpg" alt="Portret Natalia 2">
-    <img src="natalia 6.jpg" alt="Portret Natalia 3">
-    <img src="natalia 4.jpg" alt="Portret Natalia 4">
-    <img src="natalia 5.jpg" alt="Portret Natalia 5">
-    <img src="natalia 8.jpg" alt="Portret Natalia 6">
-  </div>
-
-  <h3>Sesja Rudej</h3>
-  <div class="gallery">
-    <img src="ruda.jpg" alt="Ruda 1">
-    <img src="ruda 2.jpg" alt="Ruda 2">
-    <img src="ruda 3.jpg" alt="Ruda 3">
-    <img src="ruda 4.jpg" alt="Ruda 4">
-    <img src="ruda 5.jpg" alt="Ruda 5">
-    <img src="rada1.jpg" alt="Ruda 6">
-  </div>
+  <!-- galerie -->
 </section>
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
-  <div class="gallery">
-    <img src="grzesiu 1.jpg" alt="Grzesiu 1">
-    <img src="kask malgosia.jpg" alt="Małgosia 1">
-    <img src="malgosia 2.jpg" alt="Małgosia 2">
-    <img src="malgosia 3.jpg" alt="Małgosia 3">
-    <img src="malowanie.jpg" alt="Malowanie">
-    <img src="stunt duke.jpg" alt="Stunt">
-  </div>
+  <!-- galerie -->
 </section>
 
 <section id="o-mnie" class="category-section">
@@ -216,6 +192,12 @@
   &copy; 2025 Portfolio Piotra K. Wszystkie prawa zastrzeżone.
 </footer>
 
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="lightbox-close">&times;</span>
+  <img src="" alt="powiększone zdjęcie" />
+</div>
+
 <script>
   function showSection(id) {
     const sections = document.querySelectorAll('.category-section');
@@ -227,6 +209,28 @@
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active-tab');
   }
+
+  // LIGHTBOX
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox.querySelector('img');
+  const closeBtn = document.getElementById('lightbox-close');
+
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target === closeBtn) {
+      lightbox.style.display = 'none';
+    }
+  });
 </script>
 </body>
 </html>
