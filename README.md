@@ -8,7 +8,7 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #0b0f2a; /* granatowe tło */
+      background: navy; /* nowy kolor tła */
       color: #f0f0f0;
     }
 
@@ -128,6 +128,7 @@
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.95);
       z-index: 9999;
+      animation: fadeIn 0.5s ease-in;
     }
 
     #lightbox img {
@@ -144,6 +145,15 @@
       font-size: 40px;
       color: #66ccff;
       cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
   </style>
 </head>
@@ -164,17 +174,85 @@
 
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
-  <!-- galerie -->
+  <!-- Galerie -->
+<h3>Sesja Supra</h3>
+  <div class="gallery">
+    <img src="supra 1.jpg" alt="Supra 1">
+    <img src="supra 2.jpg" alt="Supra 2">
+    <img src="supra 3.jpg" alt="Supra 3">
+    <img src="supra 6.jpg" alt="Supra 4">
+    <img src="supra 5.jpg" alt="Supra 5">
+    <img src="supra 4.jpg" alt="Supra 6">
+  </div>
+
+  <h3>Sesja g3m_green_g0blin</h3>
+  <div class="gallery">
+    <img src="gren 1.jpg" alt="Gren 1">
+    <img src="gren 6.jpg" alt="Gren 2">
+    <img src="gren 3.jpg" alt="Gren 3">
+    <img src="gren 4.jpg" alt="Gren 4">
+    <img src="gren 5.jpg" alt="Gren 5">
+    <img src="gren 2.jpg" alt="Gren 6">
+  </div>
+
+  <h3>Sesja Kamil</h3>
+  <div class="gallery">
+    <img src="kamil 1.jpg" alt="Kamil 1">
+    <img src="kamil 2.jpg" alt="Kamil 2">
+    <img src="kamil 3.jpg" alt="Kamil 3">
+  </div>
+
+  <h3>Sesja Gabi</h3>
+  <div class="gallery">
+    <img src="gabi 1.jpg" alt="Gabi 1">
+    <img src="gabi 2.jpg" alt="Gabi 2">
+    <img src="gabi 3.jpg" alt="Gabi 3">
+    <img src="gabi 4.jpg" alt="Gabi 4">
+    <img src="gabi 5.jpg" alt="Gabi 5">
+    <img src="gabi 6.jpg" alt="Gabi 6">
+  </div>
+  
 </section>
 
 <section id="ludzie" class="category-section">
   <h2>Portrety Ludzi</h2>
-  <!-- galerie -->
+  <!-- Galerie -->
+<h3>Sesja Natalii</h3>
+  <div class="gallery">
+    <img src="natalia 1.jpg" alt="Portret Natalia 1">
+    <img src="natalia 2.jpg" alt="Portret Natalia 2">
+    <img src="natalia 6.jpg" alt="Portret Natalia 3">
+    <img src="natalia 4.jpg" alt="Portret Natalia 4">
+    <img src="natalia 5.jpg" alt="Portret Natalia 5">
+    <img src="natalia 8.jpg" alt="Portret Natalia 6">
+  </div>
+
+  <h3>Sesja Rudej</h3>
+  <div class="gallery">
+    <img src="ruda.jpg" alt="Ruda 1">
+    <img src="ruda 2.jpg" alt="Ruda 2">
+    <img src="ruda 3.jpg" alt="Ruda 3">
+    <img src="ruda 4.jpg" alt="Ruda 4">
+    <img src="ruda 5.jpg" alt="Ruda 5">
+    <img src="rada1.jpg" alt="Ruda 6">
+  </div>
+
+  
 </section>
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
-  <!-- galerie -->
+  <!-- Galerie -->
+ <div class="gallery">
+    <img src="grzesiu 1.jpg" alt="Grzesiu 1">
+    <img src="kask malgosia.jpg" alt="Małgosia 1">
+    <img src="malgosia 2.jpg" alt="Małgosia 2">
+    <img src="malgosia 3.jpg" alt="Małgosia 3">
+    <img src="malowanie.jpg" alt="Malowanie">
+    <img src="stunt duke.jpg" alt="Stunt">
+  </div>
+
+  
 </section>
 
 <section id="o-mnie" class="category-section">
@@ -210,7 +288,6 @@
     event.target.classList.add('active-tab');
   }
 
-  // LIGHTBOX
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = lightbox.querySelector('img');
   const closeBtn = document.getElementById('lightbox-close');
@@ -232,5 +309,7 @@
     }
   });
 </script>
+
 </body>
 </html>
+
