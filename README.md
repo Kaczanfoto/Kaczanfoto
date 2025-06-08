@@ -1,12 +1,20 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Piotra K</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0D1C3F;
       color: #ffffff;
     }
@@ -14,6 +22,7 @@
     header, nav, footer {
       background-color: #000;
       color: white;
+      width: 100%;
     }
 
     header {
@@ -49,7 +58,9 @@
       padding: 30px 20px;
       background-color: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
-      margin: 20px;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 1600px;
     }
 
     .category-section.active {
@@ -134,6 +145,32 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
+    /* RESPONSYWNOŚĆ */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav button {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      header {
+        padding: 30px 10px;
+      }
+
+      .category-section {
+        margin: 10px;
+        padding: 20px 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -144,12 +181,13 @@
 </header>
 
 <nav>
-  <button class="active-tab" onclick="showSection('auta')">Auta</button>
-  <button onclick="showSection('ludzie')">Ludzie</button>
-  <button onclick="showSection('motory')">Motory</button>
-  <button onclick="showSection('o-mnie')">O mnie</button>
-  <button onclick="showSection('kontakt')">Kontakt</button>
+  <button class="active-tab" onclick="showSection('auta', event)">Auta</button>
+  <button onclick="showSection('ludzie', event)">Ludzie</button>
+  <button onclick="showSection('motory', event)">Motory</button>
+  <button onclick="showSection('o-mnie', event)">O mnie</button>
+  <button onclick="showSection('kontakt', event)">Kontakt</button>
 </nav>
+
 <section id="auta" class="category-section active">
   <h2>Zdjęcia Aut</h2>
 
@@ -180,7 +218,7 @@
     <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
     <img src="kamil 4.jpg" alt="Kamil 4" onclick="openLightbox(this)">
     <img src="kamil 5.jpg" alt="Kamil 5" onclick="openLightbox(this)">
-    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)"> 
+    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)">
   </div>
 
   <h3>Sesja Gabi</h3>
@@ -251,7 +289,7 @@
 </div>
 
 <script>
-  function showSection(id) {
+  function showSection(id, event) {
     const sections = document.querySelectorAll('.category-section');
     const buttons = document.querySelectorAll('nav button');
     sections.forEach(section => section.classList.remove('active'));
@@ -270,3 +308,4 @@
 
 </body>
 </html>
+
