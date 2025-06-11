@@ -226,10 +226,18 @@
     <img src="gabi 5.jpg" alt="Gabi 5" onclick="openLightbox(this)">
     <img src="gabi 6.jpg" alt="Gabi 6" onclick="openLightbox(this)">
   </div>
+
+ <h4>Sesja Subaru</h4>
+  <div class="gallery">
+    <img src="subaru 1.jpg" alt="Subaru 1" onclick="openLightbox(this)">
+    <img src="subaru 2.jpg" alt="Subaru 2" onclick="openLightbox(this)">
+    <img src="subaru 3.jpg" alt="Subaru 3" onclick="openLightbox(this)">
+  </div>
+  
 </section>
 
 <section id="ludzie" class="category-section">
-  <h2>Portrety Ludzi</h2>
+  <h2>Zdjecia Osób</h2>
 
   <h3>Sesja Natalii</h3>
   <div class="gallery">
@@ -250,6 +258,22 @@
     <img src="Ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
     <img src="Ruda 1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
   </div>
+ <h4>Sesja Martyny</h4>
+  <div class="gallery">
+    <img src="martyna 1.jpg" alt="Martyna 1" onclick="openLightbox(this)">
+    <img src="martyna 2.jpg" alt="Martyna 2" onclick="openLightbox(this)">
+    <img src="martyna 3.jpg" alt="Martyna 3" onclick="openLightbox(this)">
+  </div>
+
+
+
+
+
+
+
+
+
+  
 </section>
 
 <section id="motory" class="category-section">
