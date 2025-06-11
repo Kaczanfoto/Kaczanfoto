@@ -215,9 +215,6 @@
     <img src="kamil 1.jpg" alt="Kamil 1" onclick="openLightbox(this)">
     <img src="kamil 2.jpg" alt="Kamil 2" onclick="openLightbox(this)">
     <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
-    <img src="kamil 4.jpg" alt="Kamil 4" onclick="openLightbox(this)">
-    <img src="kamil 5.jpg" alt="Kamil 5" onclick="openLightbox(this)">
-    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)"> 
   </div>
 
   <h3>Sesja Gabi</h3>
