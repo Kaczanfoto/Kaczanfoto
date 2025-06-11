@@ -258,6 +258,7 @@
     <img src="Ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
     <img src="Ruda 1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
   </div>
+  
  <h4>Sesja Martyny</h4>
   <div class="gallery">
     <img src="martyna 1.jpg" alt="Martyna 1" onclick="openLightbox(this)">
