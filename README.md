@@ -264,15 +264,6 @@
     <img src="martyna 2.jpg" alt="Martyna 2" onclick="openLightbox(this)">
     <img src="martyna 3.jpg" alt="Martyna 3" onclick="openLightbox(this)">
   </div>
-
-
-
-
-
-
-
-
-
   
 </section>
 
@@ -290,7 +281,7 @@
 
 <section id="o-mnie" class="category-section">
   <h2>O mnie</h2>
-  <p>Cześć! Nazywam się Piotr K. Zajmuję się fotografią pasjonacko, a moje ulubione tematy to motory, auta i portrety.</p>
+  <p>Cześć! Nazywam się Piotr K. Zajmuję się fotografią motoryzacyjna jak i również fotografią Ludzi</p>
 </section>
 
 <section id="kontakt" class="category-section">
