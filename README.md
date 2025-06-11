@@ -272,7 +272,6 @@
 <section id="kontakt" class="category-section">
   <h2>Kontakt</h2>
   <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pan_kaczan____/" target="_blank">@pan_kaczan____</a></p>
-  <p><strong>E-mail:</strong> <a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a></p>
 </section>
 
 <footer>
