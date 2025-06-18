@@ -255,7 +255,7 @@
   </div>
 </section>
 
-<section id="motory" class="category-section">
+<section id="motocykle" class="category-section">
   <h2>Motocykle</h2>
   
    <div class="gallery">
