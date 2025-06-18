@@ -272,15 +272,6 @@
     <img src="st.jpg" alt="st" onclick="openLightbox(this)">
     <img src="st%206.jpg" alt=" st 6" onclick="openLightbox(this)">
   </div>
-  
-  <div class="gallery">
-    <img src="grzesiu 1.jpg" alt="Grzesiu 1" onclick="openLightbox(this)">
-    <img src="kask malgosia.jpg" alt="Małgosia 1" onclick="openLightbox(this)">
-    <img src="malgosia 2.jpg" alt="Małgosia 2" onclick="openLightbox(this)">
-    <img src="malgosia 3.jpg" alt="Małgosia 3" onclick="openLightbox(this)">
-    <img src="malowanie.jpg" alt="Malowanie" onclick="openLightbox(this)">
-    <img src="stunt duke.jpg" alt="Stunt" onclick="openLightbox(this)">
-  </div>
 </section>
 
 <section id="o-mnie" class="category-section">
