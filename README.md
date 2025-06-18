@@ -255,9 +255,10 @@
   </div>
 </section>
 
-<section id="motocykle" class="category-section">
+<section id="motory" class="category-section">
   <h2>Motocykle</h2>
-  
+   
+  <h3>capital_stunt_squad</h3>
    <div class="gallery">
     <img src="stunt%201.jpg" alt="stunt 1" onclick="openLightbox(this)">
     <img src="stunt%202.jpg" alt="stunt 2" onclick="openLightbox(this)">
@@ -272,7 +273,8 @@
     <img src="st.jpg" alt="st" onclick="openLightbox(this)">
     <img src="st%206.jpg" alt=" st 6" onclick="openLightbox(this)">
   </div>
-</section>
+  </section>
+
 
 <section id="o-mnie" class="category-section">
   <h2>O mnie</h2>
