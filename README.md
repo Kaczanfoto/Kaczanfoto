@@ -215,6 +215,9 @@
     <img src="kamil 1.jpg" alt="Kamil 1" onclick="openLightbox(this)">
     <img src="kamil 2.jpg" alt="Kamil 2" onclick="openLightbox(this)">
     <img src="kamil 3.jpg" alt="Kamil 3" onclick="openLightbox(this)">
+    <img src="kamil 4.jpg" alt="Kamil 4" onclick="openLightbox(this)">
+    <img src="kamil 5.jpg" alt="Kamil 5" onclick="openLightbox(this)">
+    <img src="kamil 6.jpg" alt="Kamil 6" onclick="openLightbox(this)"> 
   </div>
 
   <h3>Sesja Gabi</h3>
@@ -226,18 +229,10 @@
     <img src="gabi 5.jpg" alt="Gabi 5" onclick="openLightbox(this)">
     <img src="gabi 6.jpg" alt="Gabi 6" onclick="openLightbox(this)">
   </div>
-
- <h4>Sesja Subaru</h4>
-  <div class="gallery">
-    <img src="subaru 1.jpg" alt="Subaru 1" onclick="openLightbox(this)">
-    <img src="subaru 2.jpg" alt="Subaru 2" onclick="openLightbox(this)">
-    <img src="subaru 3.jpg" alt="Subaru 3" onclick="openLightbox(this)">
-  </div>
-  
 </section>
 
 <section id="ludzie" class="category-section">
-  <h2>Zdjecia Osób</h2>
+  <h2>Portrety Ludzi</h2>
 
   <h3>Sesja Natalii</h3>
   <div class="gallery">
@@ -258,18 +253,26 @@
     <img src="Ruda 5.jpg" alt="Ruda 5" onclick="openLightbox(this)">
     <img src="Ruda 1.jpg" alt="Ruda 6" onclick="openLightbox(this)">
   </div>
-  
- <h4>Sesja Martyny</h4>
-  <div class="gallery">
-    <img src="martyna 1.jpg" alt="Martyna 1" onclick="openLightbox(this)">
-    <img src="martyna 2.jpg" alt="Martyna 2" onclick="openLightbox(this)">
-    <img src="martyna 3.jpg" alt="Martyna 3" onclick="openLightbox(this)">
-  </div>
-  
 </section>
 
 <section id="motory" class="category-section">
   <h2>Motocykle</h2>
+  
+   <div class="gallery">
+    <img src="stunt%201.jpg" alt="stunt 1" onclick="openLightbox(this)">
+    <img src="stunt%202.jpg" alt="stunt 2" onclick="openLightbox(this)">
+    <img src="stunt%203.jpg" alt="stunt 3" onclick="openLightbox(this)">
+    <img src="st%207.jpg" alt="st 7" onclick="openLightbox(this)">
+    <img src="st%203.jpg" alt="st 3" onclick="openLightbox(this)">
+    <img src="st%204.jpg" alt="st 4" onclick="openLightbox(this)">
+    <img src="st8.jpg" alt=" st8" onclick="openLightbox(this)"> 
+    <img src="st%202.jpg" alt="st 2" onclick="openLightbox(this)">
+    <img src="st%205.jpg" alt=" st 5" onclick="openLightbox(this)">
+    <img src="st%201.jpg" alt="st 1" onclick="openLightbox(this)">
+    <img src="st.jpg" alt="st" onclick="openLightbox(this)">
+    <img src="st%206.jpg" alt=" st 6" onclick="openLightbox(this)">
+  </div>
+  
   <div class="gallery">
     <img src="grzesiu 1.jpg" alt="Grzesiu 1" onclick="openLightbox(this)">
     <img src="kask malgosia.jpg" alt="Małgosia 1" onclick="openLightbox(this)">
@@ -282,12 +285,13 @@
 
 <section id="o-mnie" class="category-section">
   <h2>O mnie</h2>
-  <p>Cześć! Nazywam się Piotr K. Zajmuję się fotografią motoryzacyjna jak i również fotografią Ludzi</p>
+  <p>Cześć! Nazywam się Piotr K. Zajmuję się fotografią pasjonacko, a moje ulubione tematy to motory, auta i portrety.</p>
 </section>
 
 <section id="kontakt" class="category-section">
   <h2>Kontakt</h2>
   <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pan_kaczan____/" target="_blank">@pan_kaczan____</a></p>
+  <p><strong>E-mail:</strong> <a href="mailto:kontakt@twojadomena.pl">kontakt@twojadomena.pl</a></p>
 </section>
 
 <footer>
